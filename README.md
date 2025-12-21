@@ -1,0 +1,2 @@
+# GPUCompare
+The Django project
