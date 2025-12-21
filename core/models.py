@@ -22,7 +22,7 @@ SETTINGS_CHOICES = [
 ]
 
 
-class GPU(models.Model):
+class Gpu(models.Model):
     name = models.CharField(max_length=100, verbose_name="Название модели")
     manufacturer = models.CharField(
         max_length=10,
@@ -44,11 +44,11 @@ class GPU(models.Model):
     # TODO fps/rub; fps/w; methods
 
     class Meta:
-        db_table = "GPU"
+        db_table = "Gpu"
         ordering = ['-release_year', '-name']
         verbose_name = "Видеокарта"
         verbose_name_plural = "Видеокарты"
-        indexes = [models.Index(fields=['price']), ]
+        indexes = [models.Index(fields=['price_rub']), ]
 
 
 class Game(models.Model):
@@ -69,7 +69,7 @@ class Game(models.Model):
 
 class PerformanceData(models.Model):
     gpu = models.ForeignKey(
-        GPU,
+        Gpu,
         on_delete=models.CASCADE,
         related_name='performance_data',
         verbose_name="Видеокарта")
@@ -99,8 +99,8 @@ class PerformanceData(models.Model):
         verbose_name = "Тест производительности"
         verbose_name_plural = "Тесты производительности"
         ordering = ['-avg_fps']
-        unique_together = ['gpu', 'game', 'resolution', 'settings']
+        unique_together = ['gpu', 'game', 'resolution', 'graphics_settings']
         indexes = [
             models.Index(fields=['gpu', 'game']),
-            models.Index(fields=['resolution', 'settings']),
+            models.Index(fields=['resolution', 'graphics_settings']),
             models.Index(fields=['avg_fps']), ]
