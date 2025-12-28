@@ -38,10 +38,9 @@ class Command(BaseCommand):
             'gpus_created': 0,
             'games_created': 0,
             'performance_created': 0,
-            'gpus_updated': 0,
-            'games_updated': 0,
         }
         self.stdout.write(f"Processing GPUs")
+        performance_list = []
         for row in data:
             gpu_name = row['Series']['Value'].strip()
             gpu_manufacturer = self.get_manufacturer(gpu_name)
@@ -59,10 +58,9 @@ class Command(BaseCommand):
                                price_rub=re.findall(r'\d+\.?\d*', gpu_price)[0],
                                slug=slugify(gpu_name))
             stats['gpus_created'] += 1
-
-            for settings in row['Settings'].values():
-                for resolution in settings['Resolution'].values():
-                    for game in resolution['Games']:
+            for settings, resolutions in row['Settings'].items():
+                for resolution, games in resolutions['Resolution'].items():
+                    for game in games['Games']:
                         game_name = game['Game_Name']
                         release_year = game['Release_Date']
                         avg_fps = game['Avg_FPS'].replace(',', '')
@@ -73,15 +71,14 @@ class Command(BaseCommand):
                         if created:
                             self.stdout.write(f"Created game: {game_name}")
                             stats['games_created'] += 1
-
-                        PerformanceData.objects.create(gpu=new_gpu,
+                        performance_list.append(PerformanceData(gpu=new_gpu,
                                                          game=new_game,
                                                          resolution=resolution,
                                                          graphics_settings=settings,
-                                                         avg_fps=avg_fps)
+                                                         avg_fps=avg_fps))
                         stats['performance_created'] += 1
 
-
+        PerformanceData.objects.bulk_create(performance_list, batch_size=1000)
         self.stdout.write(stats.__str__())
 
     @staticmethod

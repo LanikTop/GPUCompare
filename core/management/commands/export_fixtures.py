@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
+from xml.etree.ElementTree import indent
+
 from django.core.management.base import BaseCommand
 from django.core import serializers
 from core.models import Gpu, Game, PerformanceData
@@ -14,6 +16,12 @@ class Command(BaseCommand):
             type=str,
             default='core/fixtures/initial_data.json',
             help='Output file path for fixtures'
+        )
+        parser.add_argument(
+            '--indent',
+            type=int,
+            default=2,
+            help='JSON indentation'
         )
 
     def handle(self, *args, **options):
@@ -33,7 +41,8 @@ class Command(BaseCommand):
         data.extend(json.loads(serializers.serialize('json', performance)))
 
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            indent = options['indent'] if options['indent'] != -1 else None
+            json.dump(data, f, indent=indent, ensure_ascii=False)
 
         self.stdout.write(f"EXPORTED {len(data)} objects:")
         self.stdout.write(f"    GPUs: {gpus.count()}")

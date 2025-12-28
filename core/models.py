@@ -48,7 +48,8 @@ class Gpu(models.Model):
         ordering = ['-release_year', '-name']
         verbose_name = "Видеокарта"
         verbose_name_plural = "Видеокарты"
-        indexes = [models.Index(fields=['price_rub']), ]
+        indexes = [models.Index(fields=['price_rub']),
+                   models.Index(fields=['name']), ]
 
 
 class Game(models.Model):
@@ -102,5 +103,4 @@ class PerformanceData(models.Model):
         unique_together = ['gpu', 'game', 'resolution', 'graphics_settings']
         indexes = [
             models.Index(fields=['gpu', 'game']),
-            models.Index(fields=['resolution', 'graphics_settings']),
-            models.Index(fields=['avg_fps']), ]
+            models.Index(fields=['resolution', 'graphics_settings'])]
