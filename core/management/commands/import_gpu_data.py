@@ -43,26 +43,49 @@ class Command(BaseCommand):
         }
         self.stdout.write(f"Processing GPUs")
         for row in data:
-            gpu_name = row['Series']['Value']
+            gpu_name = row['Series']['Value'].strip()
             gpu_manufacturer = self.get_manufacturer(gpu_name)
+            # TODO rubbles
             gpu_price = row['Price']['Value']
             gpu_year = row['Year']['Value']
             gpu_memory = ''.join(filter(str.isdigit, row['Memory']['Value']))
-            gpu_memory = gpu_memory if gpu_memory else '1'
-            gpu_slug = slugify(gpu_name)
+            gpu_memory = gpu_memory if gpu_memory else '0'
             self.stdout.write(f"Processing row: {gpu_name}")
 
-            Gpu.objects.create(name=gpu_name,
+            new_gpu = Gpu.objects.create(name=gpu_name,
                                manufacturer=gpu_manufacturer,
                                release_year=gpu_year,
                                memory_gb=gpu_memory,
                                price_rub=re.findall(r'\d+\.?\d*', gpu_price)[0],
-                               slug=gpu_slug)
+                               slug=slugify(gpu_name))
             stats['gpus_created'] += 1
+
+            for settings in row['Settings'].values():
+                for resolution in settings['Resolution'].values():
+                    for game in resolution['Games']:
+                        game_name = game['Game_Name']
+                        release_year = game['Release_Date']
+                        avg_fps = game['Avg_FPS'].replace(',', '')
+
+                        new_game, created = Game.objects.get_or_create(title=game_name,
+                                              release_year=release_year,
+                                              slug=slugify(game_name))
+                        if created:
+                            self.stdout.write(f"Created game: {game_name}")
+                            stats['games_created'] += 1
+
+                        PerformanceData.objects.create(gpu=new_gpu,
+                                                         game=new_game,
+                                                         resolution=resolution,
+                                                         graphics_settings=settings,
+                                                         avg_fps=avg_fps)
+                        stats['performance_created'] += 1
+
 
         self.stdout.write(stats.__str__())
 
-    def get_manufacturer(self, gpu_name):
+    @staticmethod
+    def get_manufacturer(gpu_name):
         gpu_name_lower = gpu_name.lower()
         if 'nvidia' in gpu_name_lower or 'geforce' in gpu_name_lower or 'rtx' in gpu_name_lower or 'gtx' in gpu_name_lower:
             return 'NVIDIA'
