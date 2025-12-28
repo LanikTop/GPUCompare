@@ -1,0 +1,2634 @@
+[
+    {
+        "model": "core.gpu",
+        "pk": 1306,
+        "fields": {
+            "name": " RTX 4080 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2023,
+            "memory_gb": 20,
+            "memory_type": "GDDR6",
+            "price_rub": "799.00",
+            "image_url": "",
+            "slug": "rtx-4080-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1471,
+        "fields": {
+            "name": " RTX 4050",
+            "manufacturer": "NVIDIA",
+            "release_year": 2023,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "200.00",
+            "image_url": "",
+            "slug": "rtx-4050"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1321,
+        "fields": {
+            "name": " RTX 4090",
+            "manufacturer": "NVIDIA",
+            "release_year": 2022,
+            "memory_gb": 24,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-4090"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1320,
+        "fields": {
+            "name": " RTX 4080",
+            "manufacturer": "NVIDIA",
+            "release_year": 2022,
+            "memory_gb": 16,
+            "memory_type": "GDDR6",
+            "price_rub": "699.00",
+            "image_url": "",
+            "slug": "rtx-4080"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1319,
+        "fields": {
+            "name": " RTX 4070",
+            "manufacturer": "NVIDIA",
+            "release_year": 2022,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "499.00",
+            "image_url": "",
+            "slug": "rtx-4070"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1318,
+        "fields": {
+            "name": " RTX 4060 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2022,
+            "memory_gb": 10,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "rtx-4060-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1317,
+        "fields": {
+            "name": " RTX 4060",
+            "manufacturer": "NVIDIA",
+            "release_year": 2022,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "329.00",
+            "image_url": "",
+            "slug": "rtx-4060"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1310,
+        "fields": {
+            "name": " RX 6700 XT",
+            "manufacturer": "AMD",
+            "release_year": 2021,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "479.00",
+            "image_url": "",
+            "slug": "rx-6700-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1316,
+        "fields": {
+            "name": " RX 6600 XT",
+            "manufacturer": "AMD",
+            "release_year": 2021,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "379.00",
+            "image_url": "",
+            "slug": "rx-6600-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1312,
+        "fields": {
+            "name": " RTX 3080 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2021,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "799.00",
+            "image_url": "",
+            "slug": "rtx-3080-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1313,
+        "fields": {
+            "name": " RTX 3070 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2021,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "599.00",
+            "image_url": "",
+            "slug": "rtx-3070-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1311,
+        "fields": {
+            "name": " RTX 3060",
+            "manufacturer": "NVIDIA",
+            "release_year": 2021,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "329.00",
+            "image_url": "",
+            "slug": "rtx-3060"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1314,
+        "fields": {
+            "name": " RTX 3050 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2021,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "249.00",
+            "image_url": "",
+            "slug": "rtx-3050-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1315,
+        "fields": {
+            "name": " RTX 3050",
+            "manufacturer": "NVIDIA",
+            "release_year": 2021,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "200.00",
+            "image_url": "",
+            "slug": "rtx-3050"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1308,
+        "fields": {
+            "name": " RX 6900 XT",
+            "manufacturer": "AMD",
+            "release_year": 2020,
+            "memory_gb": 16,
+            "memory_type": "GDDR6",
+            "price_rub": "999.00",
+            "image_url": "",
+            "slug": "rx-6900-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1492,
+        "fields": {
+            "name": " RX 6800 XT",
+            "manufacturer": "AMD",
+            "release_year": 2020,
+            "memory_gb": 16,
+            "memory_type": "GDDR6",
+            "price_rub": "649.00",
+            "image_url": "",
+            "slug": "rx-6800-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1372,
+        "fields": {
+            "name": " RX 6800",
+            "manufacturer": "AMD",
+            "release_year": 2020,
+            "memory_gb": 16,
+            "memory_type": "GDDR6",
+            "price_rub": "579.00",
+            "image_url": "",
+            "slug": "rx-6800"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1309,
+        "fields": {
+            "name": " RX 5600 XT",
+            "manufacturer": "AMD",
+            "release_year": 2020,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "279.00",
+            "image_url": "",
+            "slug": "rx-5600-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1487,
+        "fields": {
+            "name": " RTX 3090",
+            "manufacturer": "NVIDIA",
+            "release_year": 2020,
+            "memory_gb": 24,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-3090"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1485,
+        "fields": {
+            "name": " RTX 3080",
+            "manufacturer": "NVIDIA",
+            "release_year": 2020,
+            "memory_gb": 10,
+            "memory_type": "GDDR6",
+            "price_rub": "699.00",
+            "image_url": "",
+            "slug": "rtx-3080"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1493,
+        "fields": {
+            "name": " RTX 3070",
+            "manufacturer": "NVIDIA",
+            "release_year": 2020,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "499.00",
+            "image_url": "",
+            "slug": "rtx-3070"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1307,
+        "fields": {
+            "name": " RTX 3060 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2020,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "rtx-3060-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1476,
+        "fields": {
+            "name": " Radeon VII",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 16,
+            "memory_type": "GDDR6",
+            "price_rub": "664.00",
+            "image_url": "",
+            "slug": "radeon-vii"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1484,
+        "fields": {
+            "name": " RX 5700 XT",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "rx-5700-xt"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1491,
+        "fields": {
+            "name": " RX 5700",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "349.00",
+            "image_url": "",
+            "slug": "rx-5700"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1473,
+        "fields": {
+            "name": " RX 560X Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "641.00",
+            "image_url": "",
+            "slug": "rx-560x-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1486,
+        "fields": {
+            "name": " RX 5500 XT 8GB",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "199.00",
+            "image_url": "",
+            "slug": "rx-5500-xt-8gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1470,
+        "fields": {
+            "name": " RX 5500 XT 4GB",
+            "manufacturer": "AMD",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "169.00",
+            "image_url": "",
+            "slug": "rx-5500-xt-4gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1479,
+        "fields": {
+            "name": " RTX 2080 SUPER",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "699.00",
+            "image_url": "",
+            "slug": "rtx-2080-super"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1474,
+        "fields": {
+            "name": " RTX 2080 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2080-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1482,
+        "fields": {
+            "name": " RTX 2080 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2080-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1489,
+        "fields": {
+            "name": " RTX 2070 SUPER",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "499.00",
+            "image_url": "",
+            "slug": "rtx-2070-super"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1475,
+        "fields": {
+            "name": " RTX 2070 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2070-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1477,
+        "fields": {
+            "name": " RTX 2070 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2070-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1490,
+        "fields": {
+            "name": " RTX 2060 SUPER",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "400.00",
+            "image_url": "",
+            "slug": "rtx-2060-super"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1467,
+        "fields": {
+            "name": " RTX 2060 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2060-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1478,
+        "fields": {
+            "name": " RTX 2060",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "349.00",
+            "image_url": "",
+            "slug": "rtx-2060"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1466,
+        "fields": {
+            "name": " GTX 1660 Ti Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1660-ti-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1463,
+        "fields": {
+            "name": " GTX 1660 Ti Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1660-ti-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1481,
+        "fields": {
+            "name": " GTX 1660 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "279.00",
+            "image_url": "",
+            "slug": "gtx-1660-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1488,
+        "fields": {
+            "name": " GTX 1660 SUPER",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "229.00",
+            "image_url": "",
+            "slug": "gtx-1660-super"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1480,
+        "fields": {
+            "name": " GTX 1660",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "220.00",
+            "image_url": "",
+            "slug": "gtx-1660"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1469,
+        "fields": {
+            "name": " GTX 1650 SUPER",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "160.00",
+            "image_url": "",
+            "slug": "gtx-1650-super"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1468,
+        "fields": {
+            "name": " GTX 1650 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1650-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1472,
+        "fields": {
+            "name": " GTX 1650 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1650-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1483,
+        "fields": {
+            "name": " GTX 1650",
+            "manufacturer": "NVIDIA",
+            "release_year": 2019,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "149.00",
+            "image_url": "",
+            "slug": "gtx-1650"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1458,
+        "fields": {
+            "name": " TITAN RTX",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 24,
+            "memory_type": "GDDR6",
+            "price_rub": "2.00",
+            "image_url": "",
+            "slug": "titan-rtx"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1460,
+        "fields": {
+            "name": " RX Vega 56 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-vega-56-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1449,
+        "fields": {
+            "name": " RX VEGA 8",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "601.00",
+            "image_url": "",
+            "slug": "rx-vega-8"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1448,
+        "fields": {
+            "name": " RX VEGA 6",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-vega-6"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1447,
+        "fields": {
+            "name": " RX VEGA 3",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "567.00",
+            "image_url": "",
+            "slug": "rx-vega-3"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1451,
+        "fields": {
+            "name": " RX VEGA 10",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "632.00",
+            "image_url": "",
+            "slug": "rx-vega-10"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1464,
+        "fields": {
+            "name": " RX 590",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "214.00",
+            "image_url": "",
+            "slug": "rx-590"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1453,
+        "fields": {
+            "name": " RX 580X Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-580x-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1456,
+        "fields": {
+            "name": " RX 560X Mobile 2GB",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "987.00",
+            "image_url": "",
+            "slug": "rx-560x-mobile-2gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1452,
+        "fields": {
+            "name": " RX 550X Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "923.00",
+            "image_url": "",
+            "slug": "rx-550x-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1450,
+        "fields": {
+            "name": " RX 540 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "645.00",
+            "image_url": "",
+            "slug": "rx-540-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1455,
+        "fields": {
+            "name": " RX 540 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2018,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-540-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1462,
+        "fields": {
+            "name": " RTX 2080 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 11,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rtx-2080-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1454,
+        "fields": {
+            "name": " RTX 2080",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "693.00",
+            "image_url": "",
+            "slug": "rtx-2080"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1461,
+        "fields": {
+            "name": " RTX 2070",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "469.00",
+            "image_url": "",
+            "slug": "rtx-2070"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1457,
+        "fields": {
+            "name": " GTX 1050 Ti Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1050-ti-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1459,
+        "fields": {
+            "name": " GTX 1050 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1050-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1465,
+        "fields": {
+            "name": " GTX 1050",
+            "manufacturer": "NVIDIA",
+            "release_year": 2018,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "129.00",
+            "image_url": "",
+            "slug": "gtx-1050"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1441,
+        "fields": {
+            "name": " TITAN Xp",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "titan-xp"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1443,
+        "fields": {
+            "name": " TITAN V",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "2.00",
+            "image_url": "",
+            "slug": "titan-v"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1439,
+        "fields": {
+            "name": " RX Vega 64",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "419.00",
+            "image_url": "",
+            "slug": "rx-vega-64"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1442,
+        "fields": {
+            "name": " RX Vega 56",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "269.00",
+            "image_url": "",
+            "slug": "rx-vega-56"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1427,
+        "fields": {
+            "name": " RX 580 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-580-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1446,
+        "fields": {
+            "name": " RX 580",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "151.00",
+            "image_url": "",
+            "slug": "rx-580"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1429,
+        "fields": {
+            "name": " RX 570 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-570-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1435,
+        "fields": {
+            "name": " RX 570",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "123.00",
+            "image_url": "",
+            "slug": "rx-570"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1424,
+        "fields": {
+            "name": " RX 560 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "987.00",
+            "image_url": "",
+            "slug": "rx-560-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1436,
+        "fields": {
+            "name": " RX 560",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "99.00",
+            "image_url": "",
+            "slug": "rx-560"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1423,
+        "fields": {
+            "name": " RX 550 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "923.00",
+            "image_url": "",
+            "slug": "rx-550-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1440,
+        "fields": {
+            "name": " RX 550",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "74.00",
+            "image_url": "",
+            "slug": "rx-550"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1425,
+        "fields": {
+            "name": " RX 530 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2017,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "636.00",
+            "image_url": "",
+            "slug": "rx-530-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1431,
+        "fields": {
+            "name": " Pro WX 7100 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "pro-wx-7100-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1437,
+        "fields": {
+            "name": " GTX 1080 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 11,
+            "memory_type": "GDDR6",
+            "price_rub": "807.00",
+            "image_url": "",
+            "slug": "gtx-1080-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1421,
+        "fields": {
+            "name": " GTX 1080 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1080-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1444,
+        "fields": {
+            "name": " GTX 1070 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "503.00",
+            "image_url": "",
+            "slug": "gtx-1070-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1434,
+        "fields": {
+            "name": " GTX 1070 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1070-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1430,
+        "fields": {
+            "name": " GTX 1060 Max-Q",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1060-max-q"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1445,
+        "fields": {
+            "name": " GTX 1050 Ti Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "876.00",
+            "image_url": "",
+            "slug": "gtx-1050-ti-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1433,
+        "fields": {
+            "name": " GTX 1050 Mobile 2GB",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1050-mobile-2gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1432,
+        "fields": {
+            "name": " GTX 1050 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "750.00",
+            "image_url": "",
+            "slug": "gtx-1050-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1438,
+        "fields": {
+            "name": " GT 1030",
+            "manufacturer": "NVIDIA",
+            "release_year": 2017,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "79.00",
+            "image_url": "",
+            "slug": "gt-1030"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1378,
+        "fields": {
+            "name": " RX 480 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-480-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1386,
+        "fields": {
+            "name": " RX 480",
+            "manufacturer": "AMD",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "rx-480"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1374,
+        "fields": {
+            "name": " RX 470 Mobile",
+            "manufacturer": "AMD",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "rx-470-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1393,
+        "fields": {
+            "name": " RX 470",
+            "manufacturer": "AMD",
+            "release_year": 2016,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "342.00",
+            "image_url": "",
+            "slug": "rx-470"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1391,
+        "fields": {
+            "name": " RX 460",
+            "manufacturer": "AMD",
+            "release_year": 2016,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "140.00",
+            "image_url": "",
+            "slug": "rx-460"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1373,
+        "fields": {
+            "name": " R5",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "710.00",
+            "image_url": "",
+            "slug": "r5"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1376,
+        "fields": {
+            "name": " R5",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "701.00",
+            "image_url": "",
+            "slug": "r5"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1388,
+        "fields": {
+            "name": " GTX 980MX",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-980mx"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1422,
+        "fields": {
+            "name": " GTX 1080 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1080-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1387,
+        "fields": {
+            "name": " GTX 1080",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "522.00",
+            "image_url": "",
+            "slug": "gtx-1080"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1390,
+        "fields": {
+            "name": " GTX 1070 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-1070-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1396,
+        "fields": {
+            "name": " GTX 1070",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "329.00",
+            "image_url": "",
+            "slug": "gtx-1070"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1377,
+        "fields": {
+            "name": " GTX 1060 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "987.00",
+            "image_url": "",
+            "slug": "gtx-1060-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1397,
+        "fields": {
+            "name": " GTX 1060 6GB",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "159.00",
+            "image_url": "",
+            "slug": "gtx-1060-6gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1392,
+        "fields": {
+            "name": " GTX 1060 3GB",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "170.00",
+            "image_url": "",
+            "slug": "gtx-1060-3gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1398,
+        "fields": {
+            "name": " GTX 1050 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2016,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "129.00",
+            "image_url": "",
+            "slug": "gtx-1050-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1416,
+        "fields": {
+            "name": " R9 Nano",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-nano"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1412,
+        "fields": {
+            "name": " R9 M380",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-m380"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1409,
+        "fields": {
+            "name": " R9 M280X 2GB",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-m280x-2gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1414,
+        "fields": {
+            "name": " R9 M280X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-m280x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1408,
+        "fields": {
+            "name": " R9 M270X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-m270x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1407,
+        "fields": {
+            "name": " R9 FURY X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "649.00",
+            "image_url": "",
+            "slug": "r9-fury-x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1410,
+        "fields": {
+            "name": " R9 FURY",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "549.00",
+            "image_url": "",
+            "slug": "r9-fury"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1418,
+        "fields": {
+            "name": " R9 390X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "495.00",
+            "image_url": "",
+            "slug": "r9-390x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1419,
+        "fields": {
+            "name": " R9 390",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "465.00",
+            "image_url": "",
+            "slug": "r9-390"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1428,
+        "fields": {
+            "name": " R9 380X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "229.00",
+            "image_url": "",
+            "slug": "r9-380x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1420,
+        "fields": {
+            "name": " R9 380",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "r9-380"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1426,
+        "fields": {
+            "name": " R7 370",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "202.00",
+            "image_url": "",
+            "slug": "r7-370"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1411,
+        "fields": {
+            "name": " GTX TITAN X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 12,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-titan-x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1415,
+        "fields": {
+            "name": " GTX 980 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "619.00",
+            "image_url": "",
+            "slug": "gtx-980-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1413,
+        "fields": {
+            "name": " GTX 980 Mobile",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-980-mobile"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1405,
+        "fields": {
+            "name": " GTX 960M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-960m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1406,
+        "fields": {
+            "name": " GTX 960",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "89.00",
+            "image_url": "",
+            "slug": "gtx-960"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1417,
+        "fields": {
+            "name": " GTX 950",
+            "manufacturer": "NVIDIA",
+            "release_year": 2015,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "89.00",
+            "image_url": "",
+            "slug": "gtx-950"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1385,
+        "fields": {
+            "name": " R9 M290X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-m290x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1401,
+        "fields": {
+            "name": " R9 295X2",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "r9-295x2"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1402,
+        "fields": {
+            "name": " R9 285",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "380.00",
+            "image_url": "",
+            "slug": "r9-285"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1400,
+        "fields": {
+            "name": " R9 280",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "350.00",
+            "image_url": "",
+            "slug": "r9-280"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1394,
+        "fields": {
+            "name": " R7 265",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "149.00",
+            "image_url": "",
+            "slug": "r7-265"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1395,
+        "fields": {
+            "name": " GTX TITAN BLACK",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "999.00",
+            "image_url": "",
+            "slug": "gtx-titan-black"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1382,
+        "fields": {
+            "name": " GTX 980M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 8,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-980m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1404,
+        "fields": {
+            "name": " GTX 980",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "249.00",
+            "image_url": "",
+            "slug": "gtx-980"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1384,
+        "fields": {
+            "name": " GTX 970M 6GB",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-970m-6gb"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1383,
+        "fields": {
+            "name": " GTX 970M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-970m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1403,
+        "fields": {
+            "name": " GTX 970",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "449.00",
+            "image_url": "",
+            "slug": "gtx-970"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1399,
+        "fields": {
+            "name": " GTX 750 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2014,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "279.00",
+            "image_url": "",
+            "slug": "gtx-750-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1370,
+        "fields": {
+            "name": " R9 290X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "r9-290x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1380,
+        "fields": {
+            "name": " R9 290",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "310.00",
+            "image_url": "",
+            "slug": "r9-290"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1371,
+        "fields": {
+            "name": " R9 280X",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "350.00",
+            "image_url": "",
+            "slug": "r9-280x"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1379,
+        "fields": {
+            "name": " R9 270",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "275.00",
+            "image_url": "",
+            "slug": "r9-270"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1375,
+        "fields": {
+            "name": " R7 250",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "95.00",
+            "image_url": "",
+            "slug": "r7-250"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1366,
+        "fields": {
+            "name": " HD 7990",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "999.00",
+            "image_url": "",
+            "slug": "hd-7990"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1364,
+        "fields": {
+            "name": " HD 7790",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "149.00",
+            "image_url": "",
+            "slug": "hd-7790"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1363,
+        "fields": {
+            "name": " GTX TITAN",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 6,
+            "memory_type": "GDDR6",
+            "price_rub": "650.00",
+            "image_url": "",
+            "slug": "gtx-titan"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1362,
+        "fields": {
+            "name": " GTX 780M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-780m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1368,
+        "fields": {
+            "name": " GTX 780",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "355.00",
+            "image_url": "",
+            "slug": "gtx-780"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1360,
+        "fields": {
+            "name": " GTX 770M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-770m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1367,
+        "fields": {
+            "name": " GTX 770",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "179.00",
+            "image_url": "",
+            "slug": "gtx-770"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1361,
+        "fields": {
+            "name": " GTX 760M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-760m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1369,
+        "fields": {
+            "name": " GTX 760",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "320.00",
+            "image_url": "",
+            "slug": "gtx-760"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1365,
+        "fields": {
+            "name": " GTX 650 Ti Boost",
+            "manufacturer": "NVIDIA",
+            "release_year": 2013,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "169.00",
+            "image_url": "",
+            "slug": "gtx-650-ti-boost"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1349,
+        "fields": {
+            "name": " HD 7970M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "hd-7970m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1355,
+        "fields": {
+            "name": " HD 7970 GHz Edition",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "hd-7970-ghz-edition"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1342,
+        "fields": {
+            "name": " HD 7950M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "hd-7950m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1350,
+        "fields": {
+            "name": " HD 7950",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "149.00",
+            "image_url": "",
+            "slug": "hd-7950"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1345,
+        "fields": {
+            "name": " HD 7850M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "964.00",
+            "image_url": "",
+            "slug": "hd-7850m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1352,
+        "fields": {
+            "name": " HD 7850",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "249.00",
+            "image_url": "",
+            "slug": "hd-7850"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1343,
+        "fields": {
+            "name": " HD 7750M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "858.00",
+            "image_url": "",
+            "slug": "hd-7750m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1351,
+        "fields": {
+            "name": " HD 7750",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "140.00",
+            "image_url": "",
+            "slug": "hd-7750"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1354,
+        "fields": {
+            "name": " GTX 690",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "439.00",
+            "image_url": "",
+            "slug": "gtx-690"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1344,
+        "fields": {
+            "name": " GTX 680M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 4,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-680m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1353,
+        "fields": {
+            "name": " GTX 680",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "485.00",
+            "image_url": "",
+            "slug": "gtx-680"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1346,
+        "fields": {
+            "name": " GTX 670MX",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-670mx"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1347,
+        "fields": {
+            "name": " GTX 670M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "1.00",
+            "image_url": "",
+            "slug": "gtx-670m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1389,
+        "fields": {
+            "name": " GTX 670",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "79.00",
+            "image_url": "",
+            "slug": "gtx-670"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1348,
+        "fields": {
+            "name": " GTX 660M",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "987.00",
+            "image_url": "",
+            "slug": "gtx-660m"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1357,
+        "fields": {
+            "name": " GTX 660 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "gtx-660-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1358,
+        "fields": {
+            "name": " GTX 660",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "79.00",
+            "image_url": "",
+            "slug": "gtx-660"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1359,
+        "fields": {
+            "name": " GTX 650 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "64.00",
+            "image_url": "",
+            "slug": "gtx-650-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1381,
+        "fields": {
+            "name": " GTX 650",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "49.00",
+            "image_url": "",
+            "slug": "gtx-650"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1356,
+        "fields": {
+            "name": " GT 640",
+            "manufacturer": "NVIDIA",
+            "release_year": 2012,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "79.00",
+            "image_url": "",
+            "slug": "gt-640"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1341,
+        "fields": {
+            "name": " HD 7970",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 3,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "hd-7970"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1337,
+        "fields": {
+            "name": " HD 6990",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "699.00",
+            "image_url": "",
+            "slug": "hd-6990"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1338,
+        "fields": {
+            "name": " GTX 590",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "699.00",
+            "image_url": "",
+            "slug": "gtx-590"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1336,
+        "fields": {
+            "name": " GTX 560 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "220.00",
+            "image_url": "",
+            "slug": "gtx-560-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1340,
+        "fields": {
+            "name": " GTX 560",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "153.00",
+            "image_url": "",
+            "slug": "gtx-560"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1339,
+        "fields": {
+            "name": " GTX 550 Ti",
+            "manufacturer": "NVIDIA",
+            "release_year": 2011,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "199.00",
+            "image_url": "",
+            "slug": "gtx-550-ti"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1333,
+        "fields": {
+            "name": " HD 6970",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "hd-6970"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1334,
+        "fields": {
+            "name": " HD 6950",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 2,
+            "memory_type": "GDDR6",
+            "price_rub": "250.00",
+            "image_url": "",
+            "slug": "hd-6950"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1331,
+        "fields": {
+            "name": " HD 6870",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "199.00",
+            "image_url": "",
+            "slug": "hd-6870"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1330,
+        "fields": {
+            "name": " HD 6850",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "199.00",
+            "image_url": "",
+            "slug": "hd-6850"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1332,
+        "fields": {
+            "name": " GTX 580",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "399.00",
+            "image_url": "",
+            "slug": "gtx-580"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1335,
+        "fields": {
+            "name": " GTX 570",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "349.00",
+            "image_url": "",
+            "slug": "gtx-570"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1327,
+        "fields": {
+            "name": " GTX 480",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "499.00",
+            "image_url": "",
+            "slug": "gtx-480"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1328,
+        "fields": {
+            "name": " GTX 470",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "gtx-470"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1329,
+        "fields": {
+            "name": " GTS 450",
+            "manufacturer": "NVIDIA",
+            "release_year": 2010,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "199.00",
+            "image_url": "",
+            "slug": "gts-450"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1322,
+        "fields": {
+            "name": " HD 4870",
+            "manufacturer": "NVIDIA",
+            "release_year": 2008,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "hd-4870"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1326,
+        "fields": {
+            "name": " GTX 285",
+            "manufacturer": "NVIDIA",
+            "release_year": 2008,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "249.00",
+            "image_url": "",
+            "slug": "gtx-285"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1323,
+        "fields": {
+            "name": " GTX 280",
+            "manufacturer": "NVIDIA",
+            "release_year": 2008,
+            "memory_gb": 1,
+            "memory_type": "GDDR6",
+            "price_rub": "649.00",
+            "image_url": "",
+            "slug": "gtx-280"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1325,
+        "fields": {
+            "name": " GTX 260 Core 216",
+            "manufacturer": "NVIDIA",
+            "release_year": 2008,
+            "memory_gb": 0,
+            "memory_type": "GDDR6",
+            "price_rub": "299.00",
+            "image_url": "",
+            "slug": "gtx-260-core-216"
+        }
+    },
+    {
+        "model": "core.gpu",
+        "pk": 1324,
+        "fields": {
+            "name": " GTX 260",
+            "manufacturer": "NVIDIA",
+            "release_year": 2008,
+            "memory_gb": 0,
+            "memory_type": "GDDR6",
+            "price_rub": "449.00",
+            "image_url": "",
+            "slug": "gtx-260"
+        }
+    }
+]

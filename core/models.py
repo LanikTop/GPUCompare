@@ -39,7 +39,7 @@ class Gpu(models.Model):
         decimal_places=2,
         verbose_name="Средняя цена (руб)")
     image_url = models.URLField(blank=True, verbose_name="Ссылка на изображение")
-    slug = models.SlugField(max_length=200, unique=True, verbose_name="URL")
+    slug = models.SlugField(max_length=200, verbose_name="URL")
 
     # TODO fps/rub; fps/w; methods
 
