@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="text-center mb-4">🎮 Сравнение видеокарт</h1>
+                
+                <form method="post" class="mb-4">
+                    {% csrf_token %}
+                    
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Игра</label>
+                            {{ form.game }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Разрешение</label>
+                            {{ form.resolution }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Настройки</label>
+                            {{ form.settings }}
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            🔍 Сравнить видеокарты
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Статистика -->
+                <div class="row text-center mt-5">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>{{ stats.total_gpus }}</h3>
+                                <p class="text-muted">Видеокарт в базе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>{{ stats.total_games }}</h3>
+                                <p class="text-muted">Игр для тестирования</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>{{ stats.total_tests }}</h3>
+                                <p class="text-muted">Тестов производительности</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

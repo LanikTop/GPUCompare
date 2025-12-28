@@ -6,4 +6,5 @@ app_name = 'core'
 
 urlpatterns = [
     path('', views.index_page, name='index'),
+    path('compare/', views.compare, name='compare'),
 ]

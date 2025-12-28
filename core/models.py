@@ -59,7 +59,9 @@ class Game(models.Model):
         validators=[MinValueValidator(1990), MaxValueValidator(2024)])
     slug = models.SlugField(max_length=200, unique=True, verbose_name="URL")
 
-    # TODO methods
+    def __str__(self):
+        return f"{self.title} ({self.release_year})"
+
     class Meta:
         db_table = "Game"
         verbose_name = "Игра"
