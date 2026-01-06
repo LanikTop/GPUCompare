@@ -42,6 +42,10 @@ class Gpu(models.Model):
     slug = models.SlugField(max_length=200, verbose_name="URL")
 
     # TODO fps/rub; fps/w; methods
+    def fps_per_ruble(self, avg_fps):
+        if self.price_rub and avg_fps:
+            return round((avg_fps / float(str(self.price_rub)) * 100) * 1000, 2)
+        return 0
 
     class Meta:
         db_table = "Gpu"
