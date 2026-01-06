@@ -52,11 +52,11 @@ class Command(BaseCommand):
             self.stdout.write(f"Processing row: {gpu_name}")
 
             new_gpu = Gpu.objects.create(name=gpu_name,
-                               manufacturer=gpu_manufacturer,
-                               release_year=gpu_year,
-                               memory_gb=gpu_memory,
-                               price_rub=re.findall(r'\d+\.?\d*', gpu_price)[0],
-                               slug=slugify(gpu_name))
+                                         manufacturer=gpu_manufacturer,
+                                         release_year=gpu_year,
+                                         memory_gb=gpu_memory,
+                                         price_rub=self.extract_price_regex(gpu_price),
+                                         slug=slugify(gpu_name))
             stats['gpus_created'] += 1
             for settings, resolutions in row['Settings'].items():
                 for resolution, games in resolutions['Resolution'].items():
@@ -66,16 +66,16 @@ class Command(BaseCommand):
                         avg_fps = game['Avg_FPS'].replace(',', '')
 
                         new_game, created = Game.objects.get_or_create(title=game_name,
-                                              release_year=release_year,
-                                              slug=slugify(game_name))
+                                                                       release_year=release_year,
+                                                                       slug=slugify(game_name))
                         if created:
                             self.stdout.write(f"Created game: {game_name}")
                             stats['games_created'] += 1
                         performance_list.append(PerformanceData(gpu=new_gpu,
-                                                         game=new_game,
-                                                         resolution=resolution,
-                                                         graphics_settings=settings,
-                                                         avg_fps=avg_fps))
+                                                                game=new_game,
+                                                                resolution=resolution,
+                                                                graphics_settings=settings,
+                                                                avg_fps=avg_fps))
                         stats['performance_created'] += 1
 
         PerformanceData.objects.bulk_create(performance_list, batch_size=1000)
@@ -92,3 +92,19 @@ class Command(BaseCommand):
             return 'Intel'
         else:
             return 'NVIDIA'
+
+    @staticmethod
+    def extract_price_regex(price_str):
+        cleaned = re.sub(r'[^\d.,]', '', price_str)
+        if ',' in cleaned and '.' in cleaned:
+            cleaned = cleaned.replace(',', '')
+        elif ',' in cleaned and cleaned.count(',') == 1:
+            comma_pos = cleaned.find(',')
+            if len(cleaned) - comma_pos <= 3:
+                cleaned = cleaned.replace(',', '.')
+            else:
+                cleaned = cleaned.replace(',', '')
+        try:
+            return float(cleaned)
+        except ValueError:
+            return 0
