@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Результаты сравнения - {{ game.title }}{% endblock %}
+
+{% block content %}
+<div>
+    <div>
+        <h2 class="mb-4">
+            🎯 Сравнение видеокарт в {{ game.title }}
+            <small class="text-muted">({{ resolution }}, {{ settings }})</small>
+        </h2>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Видеокарта</th>
+                        <th>Средний FPS</th>
+                        <th>Цена</th>
+                        <th>FPS / 1000 руб</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ best_gpu.perf.gpu.name }}</td>
+                        <td><strong>{{ best_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
+                        <td>{{ best_gpu.perf.gpu.price_rub }} ₽</td>
+                        <td>{{ best_gpu.fps_per_ruble }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ optimal_gpu.perf.gpu.name }}</td>
+                        <td><strong>{{ optimal_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
+                        <td>{{ optimal_gpu.perf.gpu.price_rub }} ₽</td>
+                        <td>{{ optimal_gpu.fps_per_ruble }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ budget_gpu.perf.gpu.name }}</td>
+                        <td><strong>{{ budget_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
+                        <td>{{ budget_gpu.perf.gpu.price_rub }} ₽</td>
+                        <td>{{ budget_gpu.fps_per_ruble }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- График Plotly -->
+        <div id="chart" class="mt-4"></div>
+    </div>
+</div>
+{% endblock %}
