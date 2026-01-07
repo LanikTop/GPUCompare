@@ -7,6 +7,7 @@ from django.utils.text import slugify
 
 from core.models import Gpu, Game, PerformanceData
 
+DOLLAR_TO_RUBLE = 78.23
 
 class Command(BaseCommand):
     help = 'Import GPU performance data from JSON file to database'
@@ -55,7 +56,7 @@ class Command(BaseCommand):
                                          manufacturer=gpu_manufacturer,
                                          release_year=gpu_year,
                                          memory_gb=gpu_memory,
-                                         price_rub=self.extract_price_regex(gpu_price),
+                                         price_rub=self.extract_price_regex(gpu_price) * DOLLAR_TO_RUBLE,
                                          slug=slugify(gpu_name))
             stats['gpus_created'] += 1
             for settings, resolutions in row['Settings'].items():
