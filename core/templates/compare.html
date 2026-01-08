@@ -6,33 +6,27 @@
         <div class="card shadow">
             <div class="card-body">
                 <h1 class="text-center mb-4">🎮 Сравнение видеокарт</h1>
-                
                 <form method="post" class="mb-4">
                     {% csrf_token %}
-                    
                     <div class="row g-3">
                         <div class="col-md-4">
                             <label class="form-label">Игра</label>
-                            {{ form.game }}
+                            {{form.game}}
                         </div>
                         <div class="col-md-4">
                             <label class="form-label">Разрешение</label>
-                            {{ form.resolution }}
+                            {{form.resolution}}
                         </div>
                         <div class="col-md-4">
                             <label class="form-label">Настройки</label>
-                            {{ form.settings }}
+                            {{form.settings}}
                         </div>
                     </div>
-                    
                     <div class="text-center mt-4">
-                        <button type="submit" class="btn btn-primary btn-lg">
-                            🔍 Сравнить видеокарты
-                        </button>
+                        <button type="submit" class="btn btn-primary btn-lg">🔍 Сравнить видеокарты</button>
                     </div>
                 </form>
-                
-                <!-- Статистика -->
+
                 <div class="row text-center mt-5">
                     <div class="col-md-4">
                         <div class="card">
