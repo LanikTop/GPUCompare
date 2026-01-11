@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from .models import Gpu, Game, PerformanceData
 from .forms import ComparisonForm
+from django.db.models import F, FloatField, ExpressionWrapper
+from .utils.plotting_graphs import create_top5_best_graph, create_top5_optimal_graph
 
 def index_page(request):
     return render(request, 'index.html')
@@ -22,7 +24,9 @@ def compare(request):
                 avg_fps__gte=min_fps
             ).select_related('gpu')
 
-            best_gpu = filter_gpus.order_by('-avg_fps').first()
+            top5fps = filter_gpus.order_by('-avg_fps')[:5]
+            best_gpu = filter_gpus.order_by('-avg_fps')[0]
+            top5best_graph = create_top5_best_graph(top5fps, game, resolution, settings)
             best_gpu_data = {
                 'perf': best_gpu,
                 'fps_per_ruble': best_gpu.gpu.fps_per_ruble(best_gpu.avg_fps)
@@ -34,16 +38,16 @@ def compare(request):
                 'fps_per_ruble': budget_gpu.gpu.fps_per_ruble(budget_gpu.avg_fps)
             }
 
-            optimal_gpu = None
-            max_efficiency = 0
-            for gpu in filter_gpus:
-                efficiency = gpu.gpu.fps_per_ruble(gpu.avg_fps)
-                if efficiency > max_efficiency:
-                    max_efficiency = efficiency
-                    optimal_gpu = gpu
+            optimal_gpus = filter_gpus.annotate(
+                efficiency=ExpressionWrapper(
+                    F('avg_fps') / F('gpu__price_rub'), output_field=FloatField())).order_by('-efficiency')[:5]
+
+
+            optimal_gpu = optimal_gpus[0]
+            top5optimal_graph = create_top5_optimal_graph(optimal_gpus, game, resolution, settings)
             optimal_gpu_data = {
                 'perf': optimal_gpu,
-                'fps_per_ruble': optimal_gpu.gpu.fps_per_ruble(optimal_gpu.avg_fps) if optimal_gpu else 0
+                'fps_per_ruble': optimal_gpu.gpu.fps_per_ruble(optimal_gpu.avg_fps)
             }
 
             return render(request, 'comparison_result.html', {
@@ -53,6 +57,8 @@ def compare(request):
                 'game': game,
                 'resolution': resolution,
                 'settings': settings,
+                'top5fps_graph': top5best_graph,
+                'top5optimal_graph': top5optimal_graph,
             })
     else:
         form = ComparisonForm()

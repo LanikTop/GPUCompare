@@ -41,10 +41,10 @@ class Gpu(models.Model):
     image_url = models.URLField(blank=True, verbose_name="Ссылка на изображение")
     slug = models.SlugField(max_length=200, verbose_name="URL")
 
-    # TODO fps/rub; fps/w; methods
+    # TODO fps/w method
     def fps_per_ruble(self, avg_fps):
         if self.price_rub and avg_fps:
-            return round((avg_fps / float(str(self.price_rub)) * 100) * 1000, 2)
+            return round(avg_fps / float(str(self.price_rub)), 5)
         return 0
 
     class Meta:
