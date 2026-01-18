@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .models import Gpu, Game, PerformanceData
 from .forms import ComparisonForm
 from django.db.models import F, FloatField, ExpressionWrapper
-from .utils.plotting_graphs import create_top5_best_graph, create_top5_optimal_graph
+from .utils.plotting_graphs import create_top5_best_graph, create_top5_optimal_graph, create_top5_budget_graph
 
 def index_page(request):
     return render(request, 'index.html')
@@ -32,7 +32,9 @@ def compare(request):
                 'fps_per_ruble': best_gpu.gpu.fps_per_ruble(best_gpu.avg_fps)
             }
 
-            budget_gpu = filter_gpus.order_by('gpu__price_rub').first()
+            budget_gpus = filter_gpus.order_by('gpu__price_rub', 'avg_fps')[:5]
+            budget_gpu = budget_gpus[0]
+            top5budget_graph = create_top5_budget_graph(budget_gpus, game, resolution, settings)
             budget_gpu_data = {
                 'perf': budget_gpu,
                 'fps_per_ruble': budget_gpu.gpu.fps_per_ruble(budget_gpu.avg_fps)
@@ -59,6 +61,7 @@ def compare(request):
                 'settings': settings,
                 'top5fps_graph': top5best_graph,
                 'top5optimal_graph': top5optimal_graph,
+                'top5budget_graph': top5budget_graph,
             })
     else:
         form = ComparisonForm()
