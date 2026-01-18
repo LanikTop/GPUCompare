@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 from django.shortcuts import render
 from .models import Gpu, Game, PerformanceData
@@ -15,7 +16,7 @@ def compare(request):
             game = form.cleaned_data['game']
             resolution = form.cleaned_data['resolution']
             settings = form.cleaned_data['settings']
-            min_fps = 30
+            min_fps = form.cleaned_data['minfps']
 
             filter_gpus = PerformanceData.objects.filter(
                 game=game,
@@ -23,7 +24,6 @@ def compare(request):
                 graphics_settings=settings,
                 avg_fps__gte=min_fps
             ).select_related('gpu')
-
             top5fps = filter_gpus.order_by('-avg_fps')[:5]
             best_gpu = filter_gpus.order_by('-avg_fps')[0]
             top5best_graph = create_top5_best_graph(top5fps, game, resolution, settings)
@@ -71,3 +71,22 @@ def compare(request):
         'total_tests': PerformanceData.objects.count(),
     }
     return render(request, 'compare.html', {'stats': stats, 'form': form})
+
+
+def check_tests(request):
+    game_id = request.GET.get('game')
+    resolution = request.GET.get('resolution')
+    settings = request.GET.get('settings')
+    min_fps = int(request.GET.get('min_fps', 30))
+    if PerformanceData.objects.filter(
+        game_id=game_id,
+        resolution=resolution,
+        graphics_settings=settings,
+        avg_fps__gte=min_fps
+    ).exists():
+        return JsonResponse({'success': True})
+    else:
+        return JsonResponse({
+            'success': False,
+            'message': 'По выбранным параметрам не найдено тестов производительности'
+        })

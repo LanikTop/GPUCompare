@@ -34,3 +34,9 @@ class ComparisonForm(forms.Form):
         initial='medium',
         widget=forms.Select(attrs={'class': 'form-control'})
     )
+    minfps = forms.IntegerField(
+        label="Минимальный FPS",
+        initial=30,
+        min_value=1,
+        max_value=1000,
+    )
