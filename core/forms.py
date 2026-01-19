@@ -20,7 +20,9 @@ class ComparisonForm(forms.Form):
     game = forms.ModelChoiceField(
         queryset=Game.objects.all().order_by('title'),
         label="Игра",
-        widget=forms.Select(attrs={'class': 'form-control'})
+        widget=forms.Select(attrs={'class': 'form-control'}),
+        empty_label="Выберите игру",
+        to_field_name='slug'
     )
     resolution = forms.ChoiceField(
         choices=RESOLUTION_CHOICES,
@@ -34,7 +36,7 @@ class ComparisonForm(forms.Form):
         initial='medium',
         widget=forms.Select(attrs={'class': 'form-control'})
     )
-    minfps = forms.IntegerField(
+    min_fps = forms.IntegerField(
         label="Минимальный FPS",
         initial=30,
         min_value=1,

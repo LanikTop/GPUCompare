@@ -10,13 +10,14 @@ def index_page(request):
     return render(request, 'index.html')
 
 def compare(request):
-    if request.method == 'POST':
-        form = ComparisonForm(request.POST)
+    if request.method == 'GET':
+        data_source = request.POST if request.method == 'POST' else request.GET
+        form = ComparisonForm(data_source)
         if form.is_valid():
             game = form.cleaned_data['game']
             resolution = form.cleaned_data['resolution']
             settings = form.cleaned_data['settings']
-            min_fps = form.cleaned_data['minfps']
+            min_fps = form.cleaned_data['min_fps']
 
             filter_gpus = PerformanceData.objects.filter(
                 game=game,
@@ -63,8 +64,7 @@ def compare(request):
                 'top5optimal_graph': top5optimal_graph,
                 'top5budget_graph': top5budget_graph,
             })
-    else:
-        form = ComparisonForm()
+    form = ComparisonForm()
     stats = {
         'total_gpus': Gpu.objects.count(),
         'total_games': Game.objects.count(),
@@ -74,12 +74,12 @@ def compare(request):
 
 
 def check_tests(request):
-    game_id = request.GET.get('game')
+    game = Game.objects.get(slug=request.GET.get('game'))
     resolution = request.GET.get('resolution')
     settings = request.GET.get('settings')
     min_fps = int(request.GET.get('min_fps', 30))
     if PerformanceData.objects.filter(
-        game_id=game_id,
+        game=game,
         resolution=resolution,
         graphics_settings=settings,
         avg_fps__gte=min_fps
