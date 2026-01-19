@@ -3,7 +3,7 @@ import plotly.offline as pyo
 
 
 def create_top5_best_graph(comparisons, game_name, resolution, settings):
-    gpu_names = [c.gpu.name + f" ({c.gpu.memory_gb} Гб)" for c in comparisons]
+    gpu_names = [c.gpu.__str__() for c in comparisons]
     fps_values = [c.avg_fps for c in comparisons]
     prices = [c.gpu.price_rub for c in comparisons]
     x_positions = list(range(1, len(comparisons) + 1))
@@ -88,7 +88,7 @@ def create_top5_best_graph(comparisons, game_name, resolution, settings):
 
 
 def create_top5_optimal_graph(comparisons, game_name, resolution, settings):
-    gpu_names = [c.gpu.name + f" ({c.gpu.memory_gb} Гб)" for c in comparisons]
+    gpu_names = [c.gpu.__str__() for c in comparisons]
     fps_values = [c.avg_fps for c in comparisons]
     prices = [float(c.gpu.price_rub) for c in comparisons]
     efficiency = [c.efficiency for c in comparisons]
@@ -173,7 +173,7 @@ def create_top5_optimal_graph(comparisons, game_name, resolution, settings):
     return pyo.plot(fig, output_type='div', include_plotlyjs=False)
 
 def create_top5_budget_graph(comparisons, game_name, resolution, settings):
-    gpu_names = [c.gpu.name + f" ({c.gpu.memory_gb} Гб)" for c in comparisons]
+    gpu_names = [c.gpu.__str__() for c in comparisons]
     fps_values = [c.avg_fps for c in comparisons]
     prices = [c.gpu.price_rub for c in comparisons]
     x_positions = list(range(1, len(comparisons) + 1))

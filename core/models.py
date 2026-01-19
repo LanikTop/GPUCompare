@@ -43,6 +43,9 @@ class Gpu(models.Model):
             return round(avg_fps / float(str(self.price_rub)), 5)
         return 0
 
+    def __str__(self):
+        return f"{self.name} ({self.memory_gb} Гб)"
+
     class Meta:
         db_table = "Gpu"
         ordering = ['-release_year', '-name']
