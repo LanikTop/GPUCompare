@@ -10,6 +10,11 @@ def index_page(request):
     return render(request, 'index.html')
 
 def compare(request):
+    stats = {
+        'total_gpus': Gpu.objects.count(),
+        'total_games': Game.objects.count(),
+        'total_tests': PerformanceData.objects.count(),
+    }
     if request.method == 'GET':
         data_source = request.POST if request.method == 'POST' else request.GET
         form = ComparisonForm(data_source)
@@ -25,6 +30,14 @@ def compare(request):
                 graphics_settings=settings,
                 avg_fps__gte=min_fps
             ).select_related('gpu')
+
+            if not filter_gpus.exists():
+                return render(request, 'compare.html', {
+                    'stats': stats,
+                    'form': form,
+                    'error': f'Не найдено тестов для {game.title}'
+                })
+
             top5fps = filter_gpus.order_by('-avg_fps')[:5]
             best_gpu = filter_gpus.order_by('-avg_fps')[0]
             top5best_graph = create_top5_best_graph(top5fps, game, resolution, settings)
@@ -65,11 +78,6 @@ def compare(request):
                 'top5budget_graph': top5budget_graph,
             })
     form = ComparisonForm()
-    stats = {
-        'total_gpus': Gpu.objects.count(),
-        'total_games': Game.objects.count(),
-        'total_tests': PerformanceData.objects.count(),
-    }
     return render(request, 'compare.html', {'stats': stats, 'form': form})
 
 
