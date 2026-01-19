@@ -24,21 +24,21 @@
                 <tbody>
                     <tr>
                         <td>Лучшая</td>
-                        <td>{{ best_gpu.perf.gpu.name }}</td>
+                        <td>{{ best_gpu.perf.gpu.name }} ({{ best_gpu.perf.gpu.memory_gb }} Гб)</td>
                         <td><strong>{{ best_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
                         <td>{{ best_gpu.perf.gpu.price_rub }} ₽</td>
                         <td>{{ best_gpu.fps_per_ruble }}</td>
                     </tr>
                     <tr>
                         <td>Оптимальная</td>
-                        <td>{{ optimal_gpu.perf.gpu.name }}</td>
+                        <td>{{ optimal_gpu.perf.gpu.name }} ({{ optimal_gpu.perf.gpu.memory_gb }} Гб)</td>
                         <td><strong>{{ optimal_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
                         <td>{{ optimal_gpu.perf.gpu.price_rub }} ₽</td>
                         <td>{{ optimal_gpu.fps_per_ruble }}</td>
                     </tr>
                     <tr>
                         <td>Бюджетная</td>
-                        <td>{{ budget_gpu.perf.gpu.name }}</td>
+                        <td>{{ budget_gpu.perf.gpu.name }} ({{ budget_gpu.perf.gpu.memory_gb }} Гб)</td>
                         <td><strong>{{ budget_gpu.perf.avg_fps|floatformat:1 }}</strong></td>
                         <td>{{ budget_gpu.perf.gpu.price_rub }} ₽</td>
                         <td>{{ budget_gpu.fps_per_ruble }}</td>
@@ -49,9 +49,7 @@
 
         <div id="chart" class="mt-4">
             {{ top5fps_graph|safe }}
-            123
             {{ top5optimal_graph|safe }}
-            321
             {{ top5budget_graph|safe }}
         </div>
     </div>
