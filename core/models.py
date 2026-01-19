@@ -32,16 +32,12 @@ class Gpu(models.Model):
         verbose_name="Год выпуска",
         validators=[MinValueValidator(2007), MaxValueValidator(2025)])
     memory_gb = models.IntegerField(verbose_name="Объем памяти (ГБ)")
-    memory_type = models.CharField(max_length=10, verbose_name="Тип памяти", default='GDDR6')
-    # TODO Тепловыделение (TDP) tdp_w
     price_rub = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         verbose_name="Средняя цена (руб)")
-    image_url = models.URLField(blank=True, verbose_name="Ссылка на изображение")
     slug = models.SlugField(max_length=200, verbose_name="URL")
 
-    # TODO fps/w method
     def fps_per_ruble(self, avg_fps):
         if self.price_rub and avg_fps:
             return round(avg_fps / float(str(self.price_rub)), 5)
@@ -98,8 +94,6 @@ class PerformanceData(models.Model):
     avg_fps = models.FloatField(
         verbose_name="Средний FPS",
         validators=[MinValueValidator(0)])
-
-    # TODO methods
 
     class Meta:
         db_table = "PerformanceData"
