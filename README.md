@@ -59,3 +59,19 @@ python manage.py runserver
 
 3. Анализируйте графики:
    - Интерактивные графики с детальной информацией
+
+## 🛠️ Технологический стек
+### **Backend**
+- **Django 6.0** - полноценный веб-фреймворк
+- **Django ORM** - работа с базой данных
+- **Django Forms** - валидация и обработка форм
+
+### **Frontend**
+- **Bootstrap 5** - адаптивный UI/UX
+- **Plotly 6.5.0** - интерактивные графики и диаграммы
+- **JavaScript** - динамическое поведение
+
+## 🖼️ Скриншоты
+![img.png](previewScreenshots/main.png)
+![img.png](previewScreenshots/compare.png)
+![img.png](previewScreenshots/compare_result.png)
